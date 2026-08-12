@@ -338,3 +338,63 @@ using namespace std;
 //     print(1,n);
 
 // }
+
+//sum of n number
+
+// void print(int i,int sum){
+//     if(i<1){
+//         cout<<sum;
+//         return;
+//     }
+//     print(i-1,sum+i);
+// }
+
+// int main(){
+//     int n;
+//     cin>>n;
+//     print(n,0);
+// }
+
+//functional way
+
+// int sum(int n){
+//     if (n==0) return 0;
+//     return n+sum(n-1);
+
+// }
+
+// int main(){
+//     int n;
+//     cin>>n;
+//     cout<<sum(n);
+// }
+
+//factorial
+
+// void print(int i,int fact){
+//     if(i<1) {
+//         cout<<fact<<endl;
+//         return;
+//     }
+//     print(i-1,fact*i);
+// }
+
+// int main(){
+//     int n;
+//     cin>>n;
+//     print(n,1);
+// }
+
+
+//fuctional
+
+int fact(int n){
+    if(n==0) return 1;
+    return n*fact(n-1);
+}
+
+int main(){
+    int n;
+    cin>>n;
+    cout<<fact(n);
+}
