@@ -388,13 +388,37 @@ using namespace std;
 
 //fuctional
 
-int fact(int n){
-    if(n==0) return 1;
-    return n*fact(n-1);
+// int fact(int n){
+//     if(n==0) return 1;
+//     return n*fact(n-1);
+// }
+
+// int main(){
+//     int n;
+//     cin>>n;
+//     cout<<fact(n);
+// }
+
+//array reverse
+
+void print(int i,int arr[],int n){
+    if(arr[i]>=2) return
+    swap(arr[i],arr[n-i-1]);
+    print(i+1,arr,n);
 }
 
 int main(){
     int n;
     cin>>n;
-    cout<<fact(n);
+    int arr[n];
+    for(int i=0;i<n;i++){
+      cin>>arr[i];
+    }
+    print(0,arr,n);
+    for(int i=0;i<n;i++){
+        cout<<arr[i];
+
+    }
+
+
 }
