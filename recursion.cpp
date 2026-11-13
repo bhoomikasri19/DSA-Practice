@@ -242,19 +242,20 @@ using namespace std;
 //     f[i]=f[i-1]+f[i-2];
 // }
 
-//recursion
 
-int f(int n){
-    if(n<=1){
-        return n;
-    }
-    int last=f(n-1);
-    int slast=f(n-2);
-    return last+slast;
-}
 
-int main(){
-    int n=4;
-    cout<<(f(4));
+//fibonnaci
+// int f(int n){
+//     if(n<=1){
+//         return n;
+//     }
+//     int last=f(n-1);
+//     int slast=f(n-2);
+//     return last+slast;
+// }
+// int main(){
+//     int n=4;
+//     cout<<f(4);
+// }
 
-}
+

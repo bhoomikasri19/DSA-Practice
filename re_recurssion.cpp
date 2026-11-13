@@ -401,24 +401,201 @@ using namespace std;
 
 //array reverse
 
-void print(int i,int arr[],int n){
-    if(arr[i]>=2) return
-    swap(arr[i],arr[n-i-1]);
-    print(i+1,arr,n);
-}
+// void print(int i,int arr[],int n){
+//     if(i>=n/2) return;
+//     swap(arr[i],arr[n-i-1]);
+//     print(i+1,arr,n);
+// }
 
-int main(){
-    int n;
-    cin>>n;
-    int arr[n];
-    for(int i=0;i<n;i++){
-      cin>>arr[i];
-    }
-    print(0,arr,n);
-    for(int i=0;i<n;i++){
-        cout<<arr[i];
+// int main(){
+//     int n;
+//     cin>>n;
+//     int arr[n];
+//     for(int i=0;i<n;i++){
+//       cin>>arr[i];
+//     }
+//     print(0,arr,n);
+//     for(int i=0;i<n;i++){
+//         cout<<arr[i];
 
-    }
+//     }
 
 
-}
+// }
+
+//Palindrome
+
+// bool f(int i,string &s){
+//     if(i>=s.size()/2) return true;
+//     if(s[i]!=s[s.size()-i-1]) return false;
+//     return f(i+1,s);
+
+// }
+// int main(){
+//     string s="madam";
+//     cout<<f(0,s);
+// }
+
+//RECURSSION
+ 
+// void p(){
+//     cout<<(1);
+//     p();
+
+// }
+
+// int main(){
+//     p();
+
+// }
+
+//Print name 5 times
+
+// void print(int i,int n){
+//     if(i>n){
+//         return;
+//     }
+//     else{
+//         cout<<"bhoomika"<<endl;
+//     }
+//     print(i+1,n);
+    
+
+// }
+
+// int main(){
+//     int n;
+//     cin>>n;
+//     print(1,n);
+// }
+
+//Print linearly 1-n
+
+// void print(int i,int n){
+//     if(i>n) return;
+//     else{
+//         cout<<(i)<<endl;
+
+//     }
+//     print(i+1,n);
+// }
+
+// int main(){
+//     int n;
+//     cin>>n;
+//     print(1,n);
+// }
+
+
+//print from n to 1
+
+// void print(int i,int n){
+//     if(i<n) return;
+//     else{
+//         cout<<i<<endl;
+//     }
+//     print(i-1,1);
+// }
+
+// int main(){
+//     int n;
+//     cin>>n;
+//     print(n,1);
+// }
+
+//print from 1-n by backtracking
+
+// void print(int i,int n){
+//     if(i<1) return;
+//     else{
+//         print(i-1,n);
+//         cout<<i<<endl;
+//     }
+// }
+
+// int main(){
+//     int n;
+//     cin>>n;
+//     print(n,n);
+// }
+
+//print n-1 backtracking
+
+// void print(int i,int n){
+//     if(i>n) return;
+//     else{
+//         print(i+1,n);
+//         cout<<i<<endl;
+//     }
+// }
+
+// int main(){
+//     int n;
+//     cin>>n;
+//     print(1,n);
+// }
+
+//sum of n num (parametrized)
+
+// void print(int i,int sum){
+//     if(i<1){
+//         cout<<sum<<endl;
+//         return;
+//     }
+//     else{
+//         print(i-1,sum+i);
+//     }
+// }
+// int main(){
+//     int n;
+//     cin>>n;
+//     print(n,0);
+// }
+
+//sum of n num(functional)
+
+// int print(int n){
+//     if (n==0) return 0;
+//     else{
+//         return n+print(n-1);
+//     }
+// }
+
+// int main(){
+//     int n;
+//     cin>>n;
+//     cout<<print(n);
+// }
+
+//factorial parametrized
+
+// void print(int i,int fact){
+//     if(i<1){
+//         cout<<fact;
+//     }
+//     else{
+//         print(i-1,fact*i);
+//     }
+// }
+
+// int main(){
+//     int n;
+//     cin>>n;
+//     print(n,1);
+
+// }
+
+//factorial functional
+
+// int print(int n){
+//     if(n==1) return 1;
+//     else{
+//         return n*print(n-1);
+//     }
+// }
+// int main(){
+//     int n;
+//     cin>>n;
+//     cout<<print(n);
+// }
+
