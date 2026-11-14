@@ -599,3 +599,52 @@ using namespace std;
 //     cout<<print(n);
 // }
 
+//Reverse an array
+
+// void print(int l,int r,int arr[]){
+//     if(l>=r) return;
+//     else{
+//         swap(arr[l],arr[r]);
+//         print(l+1,r-1,arr);
+//     }
+// }
+
+// int main(){
+//     int n=5;
+//     int arr[5]={1,2,3,4,5};
+//     print(0,n-1,arr);
+//     for(int i=0;i<n;i++){
+//         cout<<arr[i]<<" ";
+//     }
+// }
+
+//Single pointer
+// void print(int i,int n,int arr[]){
+//     if(i>=n/2) return;
+//     else{
+//         swap(arr[i],arr[n-i-1]);
+//         print(i+1,n,arr);
+//     }
+// }
+// int main(){
+//     int arr[5]={1,2,3,4,5};
+//     int n=5;
+//     print(0,n,arr);
+//     for(int i=0;i<n;i++){
+//         cout<<arr[i]<<" ";
+//     }
+
+// }
+
+//palindrome
+
+bool print(int i,string &s){
+    if(i>=s.size()/2) return true;
+    if(s[i]!=s[s.size()-i-1]) return false;
+    return print(i+1,s);
+}
+int main(){
+    string s="madam";
+    cout<<print(0,s);
+
+}
