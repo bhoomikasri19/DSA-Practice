@@ -638,13 +638,27 @@ using namespace std;
 
 //palindrome
 
-bool print(int i,string &s){
-    if(i>=s.size()/2) return true;
-    if(s[i]!=s[s.size()-i-1]) return false;
-    return print(i+1,s);
+// bool print(int i,string &s){
+//     if(i>=s.size()/2) return true;
+//     if(s[i]!=s[s.size()-i-1]) return false;
+//     return print(i+1,s);
+// }
+// int main(){
+//     string s="madam";
+//     cout<<print(0,s);
+
+// }
+
+//fibonnaci multiple recursion
+int print(int n){
+    if(n<=1) return n;
+    int last=print(n-1);
+    int slast=print(n-2);
+    return last+slast;
+
 }
 int main(){
-    string s="madam";
-    cout<<print(0,s);
-
+    int n;
+    cin>>n;
+    cout<<print(n);
 }
